@@ -1,0 +1,181 @@
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark Background */
+    color: #e0e0e0; /* Light text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #2c5364, #203a43, #0f2027); /* Dark gradient */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Cooler dark tones */
+    padding: 50px 0;
+}
+
+/* Project Cards */
+.project-card {
+    background: #2a2a2a; /* Dark card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444; /* Softer border */
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #f1c40f; /* Gold accent */
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: #bbbbbb; /* Soft gray */
+}
+
+.project-card a {
+    margin-top: 10px;
+    display: inline-block;
+    color: #000000; /* Cyan accent */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Engine Badge */
+.engine-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block; /* Ensures it only takes the necessary space */
+    width: auto; /* Prevents full-width stretching */
+}
+
+.engine-badge.unity {
+    background: #ff6f00; 
+}
+
+/* Unreal Engine 5 Badge (Blue) */
+.engine-badge.unreal {
+    background: #007bff;
+}
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Project Header */
+.project-header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.project-header h4 {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Project Details */
+.project-details {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gameplay Video */
+.gameplay-video {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gameplay-video video {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.btn-secondary {
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-header {
+        padding: 40px 10px;
+    }
+
+    .project-header h1 {
+        font-size: 2rem;
+    }
+}
