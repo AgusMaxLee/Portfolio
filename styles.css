@@ -1,15 +1,15 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #1c1c1c; /* Dark Background */
-    color: #e0e0e0; /* Light text for readability */
+    background-color: #1c1c1c;
+    color: #e0e0e0; 
     margin: 0;
     padding: 0;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #2c5364, #203a43, #0f2027); /* Dark gradient */
+    background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
     height: 300px;
     display: flex;
     align-items: center;
@@ -20,20 +20,23 @@ body {
 
 /* About Section */
 .about-section {
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Cooler dark tones */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     padding: 50px 0;
 }
 
 /* Project Cards */
 .project-card {
-    background: #2a2a2a; /* Dark card background */
-    padding: 20px;
+    background: #2a2a2a;
+    padding: 30px 20px; 
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
     margin-top: 20px;
     text-align: center;
-    border-bottom: 1px solid #444; /* Softer border */
+    border-bottom: 1px solid #444;
+    min-height: 500px;
+    position: relative;
 }
+
 
 .project-card img {
     max-width: 100%;
@@ -42,18 +45,18 @@ body {
 }
 .project-card h3 {
     margin-bottom: 10px;
-    color: #f1c40f; /* Gold accent */
+    color: #f1c40f;
 }
 
 .project-card p {
     margin-bottom: 15px;
-    color: #bbbbbb; /* Soft gray */
+    color: #bbbbbb; 
 }
 
 .project-card a {
     margin-top: 10px;
     display: inline-block;
-    color: #000000; /* Cyan accent */
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -100,15 +103,15 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     text-transform: uppercase;
-    display: inline-block; /* Ensures it only takes the necessary space */
-    width: auto; /* Prevents full-width stretching */
+    display: inline-block; 
+    width: auto; 
 }
 
 .engine-badge.unity {
     background: #ff6f00; 
 }
 
-/* Unreal Engine 5 Badge (Blue) */
+/* Unreal Engine 5 Badge  */
 .engine-badge.unreal {
     background: #007bff;
 }
