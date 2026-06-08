@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syndicate.Vision — Agustin (Max) Lee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 10px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: zoom-in;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+        }
+        .gallery-grid .span-full {
+            grid-column: 1 / -1;
+        }
+        .highlight-box {
+            background: var(--surface-2);
+            border: 1px solid rgba(212,130,74,0.2);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-top: 28px;
+        }
+        .highlight-box p {
+            margin: 0;
+            font-size: 0.92rem;
+            color: rgba(232,224,213,0.7);
+            font-style: italic;
+        }
+        .highlight-box strong {
+            color: var(--accent);
+            font-style: normal;
+        }
+        @media (max-width: 600px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-grid .span-full { grid-column: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">A<span>.</span>L</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="project-header">
+        <h1>Syndicate.Vision</h1>
+        <h4>3D Web Environment &mdash; Multiplayer Developer &amp; Environment Artist</h4>
+        <div class="project-meta">
+            <span class="meta-pill engine-web">Three.js</span>
+            <span class="meta-pill engine-web">JavaScript</span>
+            <span class="meta-pill">3D Web Environment</span>
+            <span class="meta-pill">Client Project</span>
+        </div>
+    </header>
+
+    <!-- Project Details -->
+    <div class="container my-5">
+        <div class="project-details">
+
+            <h3>Project Overview</h3>
+            <p>
+                A fully interactive 3D online store built for <strong style="color:var(--text);">Syndicate.Vision</strong>, a real client.
+                Working in a small team, we built a web-based virtual shopping environment where visitors can walk
+                around the store, browse products, and &mdash; the part that makes it special &mdash; see other
+                shoppers moving around in real time. Think of it as a living, breathing store rather than a static
+                webpage: you're never alone in it.
+            </p>
+            <p>
+                The environment was modeled in Blender and brought to life in the browser using Three.js.
+                Real-time presence was powered by a Firebase Realtime Database, syncing each user's position
+                and movement across all connected sessions.
+            </p>
+
+            <h3>My Contributions</h3>
+            <ul>
+                <li>Built and refined sections of the 3D store environment in Blender, focusing on layout, atmosphere, and visual detail.</li>
+                <li>Implemented performance optimizations to keep the Three.js scene smooth in-browser &mdash; geometry merging, texture atlasing, draw call reduction.</li>
+                <li>Designed and developed the in-world UI elements visible within the 3D space.</li>
+                <li>Architected and implemented the full <strong style="color:var(--text);">multiplayer system</strong> using Firebase Realtime Database &mdash; live syncing of player positions, spawning/despawning remote avatars, and handling connection state.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>The multiplayer challenge:</strong> making the experience feel alive without a dedicated game server &mdash; just Firebase, JavaScript, and Three.js. Every visitor's position is written to the database and read by everyone else, updating avatars in real time at 60fps.</p>
+            </div>
+
+            <h3 style="margin-top:32px;">Tech Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML &amp; CSS</span>
+                <span class="tech-tag">Firebase Realtime DB</span>
+                <span class="tech-tag">Blender</span>
+            </div>
+
+        </div>
+
+        <!-- Gallery -->
+        <div class="gameplay-video mt-5">
+            <h3>Environment &amp; Screenshots</h3>
+            <p>Blender scenes and live web environment captures:</p>
+
+            <div class="gallery-grid">
+                <img src="images/syndicate-vision-store-2.png" alt="Live web store — product display section">
+                <img src="images/syndicate-vision-store-1.png" alt="Live web store — Vision entrance">
+                <img src="images/syndicate-vision-blender-1.png" alt="Blender — store interior with plants">
+                <img src="images/syndicate-vision-blender-2.png" alt="Blender — clothing display section">
+                <img src="images/syndicate-vision-multiplayer.png" alt="Multiplayer — live avatar in store" class="span-full">
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="index.html" class="btn btn-secondary">&larr; Back to Portfolio</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p style="margin:0">&copy; 2026 Agustin (Max) Lee</p>
+    </footer>
+
+</body>
+</html>
+
+
